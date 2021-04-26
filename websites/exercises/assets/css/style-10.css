@@ -65,10 +65,6 @@ p {
     margin-bottom: 16px;
 }
 
-/* Images */
-
-img { margin-bottom: 20px }
-
 /* === Panel boxes === */
 .important-note-box { 
     margin: 54px 0; /*  Only top and bottom margins have values */
@@ -77,6 +73,7 @@ img { margin-bottom: 20px }
     border-width: 1px; /* All four borders have equal widths. */
     border-color: #000; /* All four borders have same black color. */
 }
+
 
 /* Child sub-heading h3 inside panel boxes */
 .important-note-box h3 { 
@@ -134,3 +131,7 @@ img { margin-bottom: 20px }
  
  .important-note-box.box-style-4 h3 { color: #9cb3c9 }
  .important-note-box.box-style-4 p  { color: #fff }
+
+/* Images */
+
+img { margin-bottom: 20px }

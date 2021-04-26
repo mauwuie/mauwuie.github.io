@@ -47,7 +47,8 @@ input, button, textarea, select { font: inherit }
   @media (max-width: 399px) { 
       section { padding: 7% 10% 8% 10% } 
   }
-
+  
+  
 
 /* ==== Headings ==== */
 
@@ -68,16 +69,16 @@ h3 {
 /* Paragraphs of text */
 p {
 	font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #696969;
-    line-height: 1.7
+    line-height: 1.5
 }
 
 /* == FLEXBOX PARENT CONTAINER == */
 .container-flexbox { 
     display: flex; 
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap
 }
 
 .bono {
@@ -119,8 +120,9 @@ p {
 .larry p { color: #000 }
 
 /* === COLUMN WIDTH ON MOBILES === */
+
 @media (max-width: 767px) { 
     .bono, .edge, .adam, .larry { 
       width: 100%; 
     }
-  }
+}
