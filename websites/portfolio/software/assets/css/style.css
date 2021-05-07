@@ -247,11 +247,6 @@ body { font-family: 'Roboto', sans-serif }
 	}
 }
   
-section { 
-    border-width: 2px;
-    border-style: solid;
-    border-color: red
-}
 
 section div { 
     border-width: 2px;

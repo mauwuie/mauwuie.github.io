@@ -1,62 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Block with Video</title>
+    <meta name="description" content="A hero block with a background video that plays in a continuous loop and includes a tinted overlay.">
 
-	<title>Hero Block with Background Video | Web Design Portoflio Project | Mary Smith</title>
-	
-	<meta name="description" content="Sample hero block with a background video.">
+    <link rel="preload" href="assets/videos/hero-still.jpg" as="image">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/bootstrap-custom.css">
-	<link rel="stylesheet" href="assets/css/hero-video.css">
+    <link rel="stylesheet" href="assets/css/hero-video.css">
 
-	<!-- Google Fonts -->
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
-
-    <!-- Link to icons for Font Awesome 5 -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">  
-	
 </head>
 
 
 <body>
-	
-	<div class="container-fluid hero-block hero-10">
-        
-        <!-- Background video --->
-        <video loop muted autoplay poster="assets/img/hero-still.jpg" class="background-video">  
-            <source src="assets/videos/hero-video.mp4" type="video/mp4">
-        </video>
 
+    <!-- hero block -->
+    <header class="hero-block text-center">
 
-        <!-- Optional overlay --->
-        <div class="bg-overlay"></div>
-
-        <!-- Hero block content --->
-        <div class="background-video-content">
-            <h1>EDUCATION FOR LIFE</h1>
-            <h2>A brighter career and future.</h2>
-      
-            <!-- Buttons start here -->
-            <div class="row">
-                <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fas fa-graduation-cap"></i> &nbsp;&nbsp;Enrol now</a>
-                </div>	
-                <div class="col-md-6 col-xs-12">
-                    <a class="btn btn-primary btn-lg" href="#" role="button"><i class="fas fa-university"></i> &nbsp;&nbsp;All courses</a>
-                </div>	
-            </div>
-            <!-- Buttons end here -->            
+        <div class="hero-text-container">
+            <h1 class="slide-in-top">Education for Life</h1>
+            <h2 class="slide-in-left">A brighter career and future</h2>
         </div>
 
-	</div>
+        <div class="hero-bg-media">
+            <video loop playsinline muted autoplay poster="assets/videos/hero-still.jpg" class="background-video" disablepictureinpicture preload="auto"> 
+
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="bg-overlay"></div>
+
+    </header>
+    <!-- /hero block -->
+
+
 
 </body>
-</html>
-
+</html> 
